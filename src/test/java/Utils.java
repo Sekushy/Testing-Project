@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class Utils {
     //Constants
     final static String CHROME_DRIVER_LOCATION = "chromedriver.exe";
-    final static String BASE_URL = "";
+    final static String BASE_URL = "C:\\Users\\gabri\\IdeaProjects\\Website\\index.html";
 
     //Waits for an element to load for a specified period of time.
     public static void waitForElementToLoad(int timeUnit) {
@@ -21,8 +21,6 @@ public class Utils {
     //Scrolls into view and waits for element to load.
     public static void scrollToElement(WebDriver driver, WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-        waitForElementToLoad(3);
+        waitForElementToLoad(1);
     }
-
-
 }
