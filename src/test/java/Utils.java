@@ -5,9 +5,6 @@ import org.openqa.selenium.WebElement;
 import java.util.concurrent.TimeUnit;
 
 public class Utils {
-    //Constants
-    final static String CHROME_DRIVER_LOCATION = "chromedriver.exe";
-    final static String BASE_URL = "";
 
     //Waits for an element to load for a specified period of time.
     public static void waitForElementToLoad(int timeUnit) {
